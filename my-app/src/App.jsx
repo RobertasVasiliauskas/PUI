@@ -1,14 +1,13 @@
 import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './Components/Heder/Header.jsx'
 
 function App() {
-    const [count, setCount] = useState(0)
     return (
-
-        <h1 className="text-red-500">Hello, Tailwind CSS! 🚀</h1>
-
+        <div className={"flex flex-col flex-1 min-h-screen"}>
+            <Header/>
+            <h1>Hello</h1>
+        </div>
     );
 }
 
