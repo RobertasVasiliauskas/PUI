@@ -2,6 +2,7 @@ import {useState} from 'react'
 import './App.css'
 import Header from './Components/Heder/Header.jsx'
 import Carousel from './Components/Dashboard/Carousel.jsx'
+import ExploreList from "./Components/Dashboard/ExploreList.jsx";
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <Header/>
             <h1>Hello</h1>
             <Carousel/>
+            <ExploreList/>
 
         </div>
     );
