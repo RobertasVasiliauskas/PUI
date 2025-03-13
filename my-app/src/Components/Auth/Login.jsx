@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Login() {
+    const navigate = useNavigate();
+
+    const handleSignInClick = () => {
+        navigate('/');
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
             <h2 className="text-3xl mb-6">Login</h2>
@@ -29,6 +37,7 @@ export default function Login() {
                     <button
                         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="button"
+                        onClick={handleSignInClick}
                     >
                         Sign In
                     </button>
