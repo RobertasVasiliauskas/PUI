@@ -1,5 +1,4 @@
-﻿import { useState } from "react";
-import ExploreItem from "./ExploreItem.jsx";
+﻿import ExploreItem from "./ExploreItem.jsx";
 
 import icon_feed from '../../assets/Feather.svg';
 import icon_convert from '../../assets/Divide_square.svg';

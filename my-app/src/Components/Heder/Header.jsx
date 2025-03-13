@@ -10,7 +10,7 @@ export default function Header() {
             <Navbar />
             <div className={"flex items-center space-x-4"}>
                 <Search/>
-                <Button text={"Login"} className={"text-4xl text-primary px-4 py-2 rounded-[15px] w-[11.75rem] h-[5rem]"} />
+                <Button text={"Login"} className={"text-2xl text-primary px-4 py-2 rounded-[15px]"} />
             </div>
         </header>
     )

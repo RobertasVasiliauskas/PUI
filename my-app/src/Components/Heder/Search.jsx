@@ -32,7 +32,7 @@ export default function SearchComponent() {
                     >
                         <input
                             type="text"
-                            className="text-3xl p-2 h-[5rem] bg-[#1A2E40] rounded-l-[15px] focus:outline-none"
+                            className="text-2xl p-2 h-[4rem] bg-[#1A2E40] rounded-l-[15px] focus:outline-none"
                             placeholder="Search..."
                         />
                     </motion.div>
@@ -40,12 +40,12 @@ export default function SearchComponent() {
             </AnimatePresence>
             <motion.button
                 onClick={toggleSearchBar}
-                className={`flex items-center justify-center p-2 bg-[#1A2E40] w-[5rem] h-[5rem] ${isOpen ? "rounded-tr-[15px] rounded-tl-[15px]" : "rounded-full"}`}
+                className={`flex items-center justify-center p-2 bg-[#1A2E40] w-[4rem] h-[4rem] ${isOpen ? "rounded-tr-[15px] rounded-tl-[15px]" : "rounded-full"}`}
                 whileTap={{ scale: 0.9 }}
                 animate={{ rotate: isOpen ? 90 : 0 }}
                 transition={{ duration: 0.2 }}
             >
-                <img src={search_icon} alt="Search Icon" className="h-[3rem] w-[3rem]" />
+                <img src={search_icon} alt="Search Icon" className="h-[2rem] w-[2rem]" />
             </motion.button>
         </div>
     );
