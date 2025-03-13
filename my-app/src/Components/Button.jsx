@@ -1,12 +1,9 @@
 import React from 'react';
 
-export default function Button({text, className}) {
-    const handleClick = () => {
-        console.log('Login button clicked');
-        // Add your login logic here
-    };
-
+export default function Button({ text, className, onClick }) {
     return (
-        <button className={`bg-[#1A2E40] ${className}`} onClick={handleClick}> {text} </button>
+        <button className={`bg-[#1A2E40] ${className}`} onClick={onClick}>
+            {text}
+        </button>
     );
 }
