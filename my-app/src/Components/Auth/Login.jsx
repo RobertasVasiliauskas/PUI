@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/logo.svg";
+import Form_field from "./Form_field.jsx";
+import Button from "../Button.jsx";
 
 export default function Login() {
     const navigate = useNavigate();
@@ -7,42 +10,37 @@ export default function Login() {
         navigate('/');
     };
 
+    const handleSignUpClick = () => {
+        navigate('/register');
+    };
+
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            <h2 className="text-3xl mb-6">Login</h2>
-            <form className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
-                        Username
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="username"
-                        type="text"
-                        placeholder="Username"
+        <div className="grid grid-cols-3 grid-rows-3 h-[32rem] w-full min-h-screen items-center">
+
+            <a href="/" className="m-[1rem]">
+                <img src={logo} alt="logo" className="invert-100 w-83" />
+            </a>
+
+            <div className="col-start-1 row-start-2 col-span-2 flex flex-col justify-center m-22">
+                <p className="text-7xl">Login into</p>
+                <p className="text-7xl">your account</p>
+                <p className="text-2xl py-4">Make currency tracking easy peasy</p>
+            </div>
+
+            <div className={"bg-[#1A2E40] col-start-2 row-start-2 col-span-2 row-span-2 rounded-[15px] h-[30rem] w-[45rem] m-[25rem] p-[3rem]"}>
+                <Form_field type="text" label="Email" />
+                <br/>
+                <Form_field type="password" label="Password" />
+
+                <div className={"flex items-center justify-between my-15 "}>
+                    <p className="text-2xl">Do not have an account? <a className={"text-[#362ED4] underline"} onClick={handleSignUpClick}> Sign up </a> </p>
+                    <Button
+                        onClick={handleSignUpClick}
+                        text={"Login"}
+                        className="text-6xl text-primary px-4 py-2 rounded-[15px] border-solid border-1 border-black"
                     />
                 </div>
-                <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                        Password
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                        id="password"
-                        type="password"
-                        placeholder="******************"
-                    />
-                </div>
-                <div className="flex items-center justify-between">
-                    <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="button"
-                        onClick={handleSignInClick}
-                    >
-                        Sign In
-                    </button>
-                </div>
-            </form>
+            </div>
         </div>
     );
 }
