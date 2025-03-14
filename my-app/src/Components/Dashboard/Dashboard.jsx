@@ -17,7 +17,9 @@ export default function Dashboard() {
             <Carousel />
 
             <div className="flex flex-row gap-4 flex-1">
-                <div className="w-[70%] min-h-full bg-[#1A2E40] rounded-[15px] mt-4 mb-4">
+
+                <div className="w-[70%] max-h-full bg-[#1A2E40] rounded-[15px] mt-4 mb-4 flex flex-col ">
+                    <p className="text-white text-4xl font-bold mt-4 ml-16">Currency insight</p>
                     <Chart data={sampleData} />
                 </div>
 

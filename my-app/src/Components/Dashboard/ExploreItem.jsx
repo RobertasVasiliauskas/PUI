@@ -1,13 +1,13 @@
 ﻿export default function ExploreItem({ icon, title }) {
     return (
         <li
-            className="group relative flex items-center justify-center gap-2 cursor-pointer rounded-[15px] w-auto h-[4.9rem] bg-blue-400 overflow-hidden"
+            className="group relative flex items-center justify-center gap-2 cursor-pointer rounded-[15px] w-auto h-[4.8rem] bg-blue-400 overflow-hidden"
         >
             <img src={icon} alt={title} className="h-5 w-5" />
             <h1 className="text-lg font-semibold">{title}</h1>
 
             <div
-                className="absolute top-0 right-0 h-full w-[12rem] flex items-center justify-center gap-2 bg-blue-600 text-white
+                className="absolute top-0 right-0 h-full w-[33%] flex items-center justify-center gap-2 bg-blue-600 text-white
                            transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
             >
                 <p className="text-base">Follow</p>
