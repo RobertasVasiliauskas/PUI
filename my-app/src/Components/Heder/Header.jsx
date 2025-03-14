@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <header className={"h-[8rem] flex items-center justify-between px-[2rem]"}>
-            <img src={logo} alt={"logo"} className={"invert-100 h-[8rem] "}/>
+            <img src={logo} alt={"logo"} className={"invert-100 h-[8rem] -ml-[50px]"}/>
             <Navbar />
             <div className={"flex items-center space-x-4"}>
                 <Search/>

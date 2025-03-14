@@ -16,6 +16,7 @@
     "react-dom": "^19.0.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.3.0",
+    "recharts": "^2.15.1",
     "swiper": "^11.2.5"
   },
   "devDependencies": {

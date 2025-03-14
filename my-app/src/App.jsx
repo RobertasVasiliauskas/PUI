@@ -13,7 +13,7 @@ function App() {
     const noHeaderRoutes = ['/login', '/register'];
 
     return (
-        <div className={"flex flex-col flex-1 min-h-screen"}>
+        <div className={"flex flex-col flex-1 min-h-screen mx-5"}>
             {!noHeaderRoutes.includes(location.pathname) && <Header />}
             <Routes>
                 <Route path="/" element={<Dashboard />} />
